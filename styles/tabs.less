@@ -7,18 +7,18 @@
 
 .tab-bar {
   background-color: @tab-bar-background-color;
-  border-bottom: 1px solid @base-border-color;
 
   .tab {
     color: @text-color;
     height: @tab-height;
     line-height: @tab-height;
     font-size: @font-size;
-    border-right: 1px solid @tab-border-color;
     background-color: @tab-background-color;
+    max-width: 200px;
     &.active {
       color: @text-color-selected;
       background-color: @tab-background-color-active;
+      flex: 1;
     }
 
 
@@ -26,7 +26,7 @@
     &.modified:not(:hover) .close-icon {
       top: 50%;
       right: @component-padding + 4px; // 4px -> half of icon size
-      margin-top: -3px;
+      margin-top: -4px;
       border-color: @text-color-info;
     }
     &.modified:hover .close-icon {
@@ -35,11 +35,24 @@
 
 
     // Close Icon (the X) -------------------
+    .close-icon {
+      text-align: center;
+    }
     .close-icon:hover {
-      color: @text-color-selected;
+      color: @text-color-subtle;
+    }
+    .close-icon::before {
+      border-radius: 2px;
+      padding-top: 1px;
+      padding-left: 0px;
+      width: 13px;
+      height: 13px;
+    }
+    .close-icon:hover::before {
+      background-color: @background-color-info;
     }
     &.active .close-icon:hover {
-      color: @text-color;
+      color: @text-color-selected;
     }
 
 

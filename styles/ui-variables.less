@@ -1,25 +1,15 @@
-
 // UI Variables
 // -------------------
 
-// These are the official UI variables that every UI theme should define.
-// It allows other packages to match your theme.
-
-// Overrides: atom/static/variables/ui-variables.less
-
-// Try to edit some of the values below to see your theme change.
-// A good start is to change the color of the `@base-background-color` variable.
-
-
 // Text Colors
-@text-color:           hsl(0,0%,66%);
-@text-color-subtle:    hsl(0,0%,50%);
-@text-color-highlight: hsl(0,0%,94%);
+@text-color:           hsl(0,0%,80%);
+@text-color-subtle:    hsl(0,0%,60%);
+@text-color-highlight: hsl(0,0%,90%);
 @text-color-selected:  hsl(0,0%,100%);
 
 @text-color-info:    hsl(219,  79%, 66%);
 @text-color-success: hsl(140,  44%, 62%);
-@text-color-warning: hsl( 36,  60%, 72%);
+@text-color-warning: hsl(44, 92%, 69%);
 @text-color-error:   hsl(  9, 100%, 64%);
 
 // Background colors
@@ -28,31 +18,31 @@
 @background-color-warning: hsl(32,   60%, 50%);
 @background-color-error:   hsl(0,    70%, 50%);
 
-@background-color-highlight: lighten(@base-background-color, 5%);
+@background-color-highlight: lighten(@base-background-color, 3%);
 @background-color-selected:  lighten(@base-background-color, 10%);
-@app-background-color:       darken(@base-background-color, 5%);
+@app-background-color:       darken(@base-background-color, 2%);
 
 // Base colors
-@base-background-color: hsl(222,6%,22%);
-@base-border-color:     darken(@base-background-color, 8%);
+@base-background-color: hsl(214, 31%, 8%);
+@base-border-color:     darken(@base-background-color, 5%);
 
 // Component colors
 @pane-item-background-color: @base-background-color;
 @pane-item-border-color:     @base-border-color;
 
-@input-background-color: @app-background-color;
+@input-background-color: darken(@app-background-color, 10%);
 @input-border-color:     @base-border-color;
 
-@tool-panel-background-color: @base-background-color;
+@tool-panel-background-color: darken(@base-background-color, 0%);
 @tool-panel-border-color:     @base-border-color;
 
-@inset-panel-background-color: lighten(@base-background-color, 4%);
+@inset-panel-background-color: darken(@base-background-color, 4%);
 @inset-panel-border-color:     @base-border-color;
 
 @panel-heading-background-color: lighten(@base-background-color, 4%);
 @panel-heading-border-color:     @base-border-color;
 
-@overlay-background-color: lighten(@base-background-color, 5%);
+@overlay-background-color: lighten(@base-background-color, 3%);
 @overlay-border-color:     @base-border-color;
 
 @button-background-color:          lighten(@base-background-color, 10%);
@@ -63,7 +53,7 @@
 @tab-bar-background-color:    @base-background-color;
 @tab-bar-border-color:        @base-border-color;
 @tab-background-color:        @tab-bar-background-color;
-@tab-background-color-active: lighten(@tab-bar-background-color, 10%);
+@tab-background-color-active: lighten(@tab-bar-background-color, 6%);
 @tab-border-color:            @base-border-color;
 
 @tree-view-background-color: @base-background-color;
@@ -72,7 +62,7 @@
 // Site colors
 @ui-site-color-1: hsl(208, 100%, 50%); // blue
 @ui-site-color-2: hsl(160,  70%, 42%); // green
-@ui-site-color-3: hsl(32,   60%, 50%); // orange
+@ui-site-color-3: hsl(54, 91%, 54%); // orange
 @ui-site-color-4: #D831B0;             // pink
 @ui-site-color-5: #EBDD5B;             // yellow
 
@@ -80,14 +70,14 @@
 @font-size: 12px;
 @input-font-size: 14px;
 
-@disclosure-arrow-size: 12px;
+@disclosure-arrow-size: 14px;
 
 @component-padding: 10px;
 @component-icon-padding: 5px;
-@component-icon-size: 16px;
-@component-line-height: 25px;
+@component-icon-size: 12px;
+@component-line-height: 22px;
 
-@tab-height: 30px;
+@tab-height: 25px;
 
 // Misc
 @component-border-radius: 2px;
