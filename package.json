@@ -1,9 +1,12 @@
 {
   "name": "obsidian-ui",
   "theme": "ui",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "🌚 A minimalistic dark and dense Atom theme that aims at saving your space.",
-  "keywords": ["ui", "theme"],
+  "keywords": [
+    "ui",
+    "theme"
+  ],
   "repository": "https://github.com/billykwok/Obsidian",
   "license": "MIT",
   "engines": {
